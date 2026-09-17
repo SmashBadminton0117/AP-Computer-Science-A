@@ -10,6 +10,7 @@ public class GuessStarter {
         
         //message
         System.out.print("I'm thinking of a number between 1 and 100 (including both). \nCan you guess what it is? ");
+        System.out.print("\nType in a number! ");
         
         int number = random.nextInt(100) + 1;
         int guess = in.nextInt();
@@ -17,6 +18,6 @@ public class GuessStarter {
         //output
         System.out.print("\nYour guess is: " + guess);
         System.out.print("\nThe number I was thinking of is: " + number);
-        System.out.print("\nYou were off by: " + (number - guess));
+        System.out.println("\nYou were off by: " + (number - guess));
     }
 }
